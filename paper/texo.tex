@@ -1,6 +1,6 @@
-\documentclass{article}
+\documentclass[nofonts]{ctexart}
 
-\usepackage{xeCJK}
+% \defaultfontfeatures{Mapping=tex-text}
 
 \setCJKmainfont{Hiragino Sans GB}
 \setmainfont{Myriad Pro}
@@ -11,6 +11,18 @@
 \begin{document}
 
 \maketitle
+
+\begin{abstract}
+iPhone OS 缺少一个轻量级的文本排版引擎，而 Mac OS X 本身提供的
+Core Text 引擎不能够在其他平台下使用，Texo 开发的目的是尽可能
+利用这两个系统共有的基础框架，开发一个尽可能高效的轻量级文本排
+版引擎，提供较为复杂的富文本排版支持。
+\end{abstract}
+
+在 iPhone OS 下阅读大量的文本内容遇到的瓶颈是文本的载入效率和
+排版效率问题，现有的文本阅读器往往使用系统自带的 WebKit 引擎提
+供复杂文本的布局与显示，然而 WebKit 为了支持超文本复杂的效果，
+引入了许多额外开销，在阅读纯文本内容时这些开销本不必存在。
 
 \end{document}
 
